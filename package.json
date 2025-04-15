@@ -1,0 +1,34 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "author": "coderming",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@vssue/api-github-v3": "^1.0.0",
+    "axios": "^0.19.0",
+    "babel-runtime": "^6.26.0",
+    "consola": "^2.7.1",
+    "cross-env": "^5.2.0",
+    "dayjs": "^1.8.14",
+    "gitalk": "^1.5.0",
+    "gitment": "0.0.3",
+    "koa": "^2.6.2",
+    "nuxt": "^2.0.0",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vssue": "^1.0.1",
+    "vue-markdown": "^2.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
