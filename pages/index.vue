@@ -38,18 +38,23 @@ export default {
     About,
     Github,
   },
-  head () {
+  head() {
     return {
       title: OptionConfig.docName,
       meta: [
-        { hid: 'description',
+        {
+          hid: 'description',
           name: 'description',
-          content: `${OptionConfig.description
-              || (HeaderConfig.name + (HeaderConfig.nickName ? `（${HeaderConfig.nickName}）` : '') +
-              `的个人简历 - ${HeaderConfig.job}`)}` }
-      ]
+          content: `${
+            OptionConfig.description ||
+            HeaderConfig.name +
+              (HeaderConfig.nickName ? `（${HeaderConfig.nickName}）` : '') +
+              `的个人简历 - ${HeaderConfig.job}`
+          }`,
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 
@@ -72,6 +77,9 @@ html, body, h1, h2, h3, h4, h5, h6, hr, p
   padding 0
   font-family $fontFamily
 
+u{
+  color: black
+}
 body
   background $bgColor
 
